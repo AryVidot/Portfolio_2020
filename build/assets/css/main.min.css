@@ -43,7 +43,7 @@
 /* Typography */
 body{
   font-family: "Montserrat";
-  line-height: .9;
+  line-height: 1;
   font-size: 1rem;
   font-weight: 400;
   min-width: 360PX;
@@ -52,9 +52,6 @@ body{
 
 }
 
-
-
-/* ===== LAYOUT =====*/
 a{
   text-decoration: none;
   color: var(--primary-clr) ;
@@ -64,13 +61,16 @@ h1{
   font-weight: 900;
   font-size: 9.375em;
   color: var(--primary-clr);
-  text-shadow: var(--shadow);
+  /* text-shadow: var(--shadow); */
 }
 
 h2{
   font-weight: 900 ;
   font-size: 2.5em;
 }
+
+/* ===== LAYOUT =====*/
+
 .hero{
   position: relative;
   height: 100vh;
@@ -82,24 +82,24 @@ h2{
 }
 
 .hero__logo{
-width: 100%;
-display: block;
-margin: 0 auto;
-text-align: left;
-justify-self: flex-start;
-align-self: flex-start;
-font-size: 8.5vw;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  justify-self: flex-start;
+  align-self: flex-start;
+  font-size: 12vw;
 
 }
 
 .hero__description{
   width: 100%;
-display: block;
-margin: 0 auto;
-text-align: left;
-justify-self: flex-start;
-align-self: flex-start;
-font-size: 4.25vw;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  justify-self: flex-start;
+  align-self: flex-start;
+  font-size: 5vw;
 }
 
 .hero-video_ctnr{
@@ -137,21 +137,53 @@ font-size: 4.25vw;
   background: linear-gradient(to right, rgba(250, 112, 154, 0.5), rgba(254, 225, 64, 0.5));
 }
 
-
 .hero_content{
   z-index: 10;
 }
 
-.hero__shape{
+/* .hero__shape{
   z-index: 2;
   width: 0;
   height: 0;
-  border-top: 6.25em solid transparent;
-  border-right: 12.5em solid rgba(0, 255, 255, .5);
-  border-bottom: 6.25em solid transparent;
+  border-top: 4.25rem solid transparent;
+  border-right:  8.5rem solid rgba(0, 255, 255, .5);
+  border-bottom: 4.25rem solid transparent;
   position: absolute;
-  /* animation: rotate 1000duration timing-function delay iteration-count ion fill-mode; */
+  top: 19em;
+  left: 2.5em;
+} */
+
+.hero__shape {
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-left: 8rem solid transparent;
+  border-right: 8rem solid transparent;
+  border-top: 7rem solid rgba(0, 255, 255, .5);;
+  position: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: -1.5em;
+
 }
+
+.btn{
+  position: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 10;
+  color: var(--primary-clr);
+  padding: 1em;
+  margin-top: 1em;
+  border: rgba(0, 255, 255, .5) solid .2em;
+  border-radius: 15px;
+}
+
+.btn:hover{
+  transform: scale(0.9);
+}
+
+
 
 
 /* ===== MEDIA QUERY ===== */
@@ -167,4 +199,17 @@ font-size: 4.25vw;
   html {
     font-size: 2rem;
   }
+
+  .hero__shape{
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-top: 12.5rem solid transparent;
+  border-right:  25rem solid rgba(0, 255, 255, .5);
+  border-bottom: 12.5rem solid transparent;
+  position: absolute;
+  top: 15em;
+  left: 5em;
+}
+
 } */
