@@ -10,8 +10,15 @@
       href="favicon-196x196.png"
       sizes="196x196"
     />
-    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <link rel="stylesheet" href="build/assets/css/main.min.css" />
     <!-- Video by thiago japyassu on pexels.com - https://www.pexels.com/@japyassu -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const yrSpan = document.querySelector(".year");
+        const currentYear = new Date().getFullYear();
+        yrSpan.textContent = currentYear;
+      });
+    </script>
   </head>
   <body>
     <header class="nav">
@@ -19,8 +26,8 @@
         <h1 class="nav__logo">ARY VIDOT</h1>
         <ul class="nav__list">
           <li class="nav__item"><a href="index.html">HOME</a></li>
+          <li class="nav__item"><a href="#">PORTFOLIO</a></li>
           <li class="nav__item"><a href="about.html">INFO</a></li>
-          <li class="nav__item active"><a href="#">PORTFOLIO</a></li>
           <li class="nav__item"><a href="#">CONTACT</a></li>
         </ul>
       </nav>
@@ -28,9 +35,16 @@
     <main>
       <section></section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="copyright">
+        <p>
+          <span class="year">2020</span> -
+          <a href="www.aryvidot.com" target="_blank">Ary Vidot</a
+          ><span class="dot">.</span> All rights reserved
+        </p>
+      </div>
+    </footer>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="/source/js/app.js"></script>
   </body>
 </html>
