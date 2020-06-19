@@ -7,3 +7,13 @@
 //     origin: 'bottom',
 //     distance: '100px'
 // });
+
+// MENU BUTTON
+
+$(document).ready(function () {
+  $(".container").click(function () {
+    $(".stick").toggleClass(function () {
+      return $(this).is(".open, .close") ? "open close" : "open";
+    });
+  });
+});
