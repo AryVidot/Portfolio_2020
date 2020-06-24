@@ -9,11 +9,6 @@
 // });
 
 // MENU BUTTON
-
-$(document).ready(function () {
-  $(".container").click(function () {
-    $(".stick").toggleClass(function () {
-      return $(this).is(".open, .close") ? "open close" : "open";
-    });
-  });
+$(".menu-opener").click(function () {
+  $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
 });

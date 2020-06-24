@@ -12,33 +12,36 @@
     />
     <link rel="stylesheet" href="build/assets/css/style.css" />
     <!-- Video by thiago japyassu on pexels.com - https://www.pexels.com/@japyassu -->
-    <!-- <script>
+    <!-- Hamberger Menu by Alexandr Izumenko - https://codepen.io/Izumenko/pens/showcase -->
+    <script>
       document.addEventListener("DOMContentLoaded", function () {
         const yrSpan = document.querySelector(".year");
         const currentYear = new Date().getFullYear();
         yrSpan.textContent = currentYear;
       });
-    </script> -->
+    </script>
   </head>
+  <!-- 
+  --primary-clr: #e9f1f7;
+  --secondary-clr: rgb(45,253,185);
+  --tertiary-clr: rgb(255,20,86); -->
   <body>
     <header class="nav">
-      <nav>
+      <nav class="menu-opener">
+        <div class="menu-opener-inner"></div>
+      </nav>
+      <nav class="menu">
         <h1 class="nav__logo">ARY VIDOT</h1>
         <ul class="nav__list">
           <li class="nav__item"><a href="index.html">HOME</a></li>
-          <li class="nav__item"><a href="#">PORTFOLIO</a></li>
-          <li class="nav__item"><a href="about.html">INFO</a></li>
+          <li class="nav__item"><a href="portfolio.html">PORTFOLIO</a></li>
+          <li class="nav__item"><a href="info.html">INFO</a></li>
           <li class="nav__item"><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <div class="stick stick-1"></div>
-          <div class="stick stick-2"></div>
-          <div class="stick stick-3"></div>
-        </div>
         <div class="hero-video_ctnr">
           <video
             src="build/assets/vid/BoatInSea_1937807.mp4"
@@ -55,20 +58,20 @@
           </h1>
           <h2 class="hero__description">Web Developer</h2>
         </div>
-        <!-- <div class="hero__shape"></div> -->
 
-        <a href="contact.html" class="btn">Get in touch</a>
+        <a href="contact.html" class="btn">GET IN TOUCH</a>
       </section>
-      <!-- <footer>
-        <div class="copyright">
-          <p>
-            <span class="year">1907</span> -
-            <a href="www.aryvidot.com" target="_blank">ARY VIDOT</a
-            ><span class="dot"> -</span> ALL RIGHTS RESERVED
-          </p>
-        </div>
-      </footer> -->
     </main>
+    <footer>
+      <div class="copyright">
+        <p>
+          <span class="year">1980</span> -
+          <a href="www.aryvidot.com" target="_blank">ARY VIDOT</a
+          ><span class="dot"> -</span> ALL RIGHTS RESERVED
+        </p>
+      </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/source/js/app.js"></script>
   </body>
