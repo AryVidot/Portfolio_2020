@@ -123,6 +123,7 @@
     /* width: -webkit-calc(100% - 10rem); */
     width: calc(100% - 0.5rem);
     /* width: 100%; */
+    overflow: visible;
   
   }
   .menu.active .nav__item {
