@@ -11,6 +11,10 @@
       sizes="196x196"
     />
     <link rel="stylesheet" href="build/assets/css/style.css" />
+    <link rel="stylesheet" href="build/assets/css/menu.css" />
+    <link rel="stylesheet" href="build/assets/css/footer.css" />
+    <link rel="stylesheet" href="build/assets/css/form.css" />
+
     <!-- Video by thiago japyassu on pexels.com - https://www.pexels.com/@japyassu -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -36,12 +40,47 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>CONTACT</h1>
-        <div class="form">
-          <input type="text" name="name" />
-          <input type="text" name="email" />
-          <input type="text" name />
+      <section class="ctnr">
+        <div class="intro">
+          <section class="intro__content">
+            <h1 class="intro__title">CONTACT</h1>
+
+            <p>Don't be shy and say hello!</p>
+            <p>We can meet for a coffee and see how we can work together.</p>
+            <p style="display: none;">
+              Why not checking my <a href="#">Aeropress Receipe App</a> and send
+              your details over.
+            </p>
+          </section>
+          <section class="form">
+            <form
+              action="mailto:aryvidot.dev@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="name">
+                <input type="text" name="name" autocomplete="off" required />
+                <label for="name" class="form__label">
+                  <span class="form__name">Name</span>
+                </label>
+              </div>
+
+              <div class="email">
+                <input type="email" name="email" autocomplete="off" required />
+                <label for="email" class="form__label">
+                  <span class="form__email">Email</span>
+                </label>
+              </div>
+
+              <div class="message">
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <label for="message" class="form__label">
+                  <span class="form__message">Message</span>
+                </label>
+              </div>
+            </form>
+            <button class="btn" type="submit" name="submit">Submit</button>
+          </section>
         </div>
       </section>
     </main>

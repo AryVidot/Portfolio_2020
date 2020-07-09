@@ -12,4 +12,4 @@ Video:
 Video by thiago japyassu on pexels.com - https://www.pexels.com/@japyassu
 
 Menu:
-Hamberger Menu by Alexandr Izumenko - https://codepen.io/Izumenko/pens/showcase
+Hamberger Menu by Philippe - https://codepen.io/Philippe_Fercha

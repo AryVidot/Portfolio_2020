@@ -11,6 +11,8 @@
       sizes="196x196"
     />
     <link rel="stylesheet" href="build/assets/css/style.css" />
+    <link rel="stylesheet" href="build/assets/css/menu.css" />
+    <link rel="stylesheet" href="build/assets/css/footer.css" />
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const yrSpan = document.querySelector(".year");
@@ -36,8 +38,8 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <div class="hero-video_ctnr">
+      <section class="hero ctnr">
+        <div class="hero__video">
           <video
             src="build/assets/vid/BoatInSea_1937807.mp4"
             id="hero-vid"
@@ -47,15 +49,18 @@
             muted
           ></video>
         </div>
-        <div class="hero_content">
+        <div class="hero__overlay"></div>
+
+        <div class="hero__content">
           <h1 class="hero__logo">
             ARY VIDOT
           </h1>
           <h2 class="hero__description">Web Developer</h2>
+
+          <a href="contact.html" class="btn">GET IN TOUCH</a>
         </div>
 
-        <a href="contact.html" class="btn">GET IN TOUCH</a>
-        <section class="social">
+        <!-- <section class="social">
           <ul class="social__list">
             <li class="social__list">
               <a
@@ -79,7 +84,7 @@
               /></a>
             </li>
           </ul>
-        </section>
+        </section> -->
       </section>
     </main>
     <footer>
