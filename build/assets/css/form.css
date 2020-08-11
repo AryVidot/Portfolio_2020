@@ -12,6 +12,7 @@ section .form {
   flex-direction: column;
   overflow: hidden;
 }
+
 .name,
 .email,
 .message {
@@ -95,4 +96,26 @@ textarea {
   margin-bottom: 1em;
 }
 
-@media (min-);
+/* ==== Submit Button ==== */
+
+.form-btn {
+  text-align: center;
+  color: var(--secondary-clr);
+  padding: 1em;
+  margin: auto;
+  /* margin-top: 3em; */
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  border: var(--secondary-clr) solid;
+  border-width: 0.2em;
+  border-radius: 50px;
+  width: 50vw;
+}
+
+.form-btn:hover {
+  transform: scale(0.95);
+  color: var(--tertiary-clr);
+  border: var(--tertiary-clr) solid;
+  border-width: 0.2em;
+}
