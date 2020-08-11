@@ -1,3 +1,10 @@
+// import React from "react";
+
+// MENU BUTTON
+$(".menu-opener").click(function () {
+  $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+});
+
 // JavaScript
 // window.sr = ScrollReveal();
 
@@ -10,8 +17,3 @@
 
 // const express = require("express");
 // const app = express;
-
-// MENU BUTTON
-$(".menu-opener").click(function () {
-  $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
-});

@@ -92,4 +92,7 @@ textarea {
   resize: none;
   border: none;
   outline: none;
+  margin-bottom: 1em;
 }
+
+@media (min-);
