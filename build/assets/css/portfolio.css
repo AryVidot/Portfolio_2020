@@ -1,0 +1,5 @@
+@import url("/build/assets/css/style.css");
+
+.content {
+  display: grid;
+}
