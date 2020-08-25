@@ -89,7 +89,7 @@ section .form {
 textarea {
   display: flex;
   width: 100%;
-  /* background-color: red; */
+  background-color: transparent;
   resize: none;
   border: none;
   outline: none;
@@ -101,16 +101,16 @@ textarea {
 .form-btn {
   text-align: center;
   color: var(--secondary-clr);
+  text-shadow: 1px 2px rgb(255, 20, 86);
+  background-color: none;
   padding: 1em;
   margin: auto;
-  /* margin-top: 3em; */
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.3em;
   border: var(--secondary-clr) solid;
   border-width: 0.2em;
-  /* border-radius: 50px; */
-  width: 50vw;
+  width: 100%;
 }
 
 .form-btn:hover {

@@ -79,6 +79,7 @@ h3 {
 /* Global layout */
 
 .ctnr {
+  box-sizing: border-box;
   background: linear-gradient(
     to right,
     rgba(250, 112, 154, 0.5),
@@ -238,14 +239,16 @@ section > p {
 
 .download__cv {
   display: flex;
-  width: 50%;
-  background-color: rgb(255, 20, 86);
+  width: 100%;
+  /* background-color: rgb(255, 20, 86); */
   padding: 1em;
-  border-radius: 15px;
+  border: 1px solid rgb(255, 20, 86);
+  /* border-radius: 15px; */
   margin: 1em auto;
   justify-content: center;
   align-content: center;
   text-align: center;
+  text-shadow: 1px 2px rgb(255, 20, 86);
   font-weight: var(--fw-l);
   letter-spacing: 0.0625em;
 }
