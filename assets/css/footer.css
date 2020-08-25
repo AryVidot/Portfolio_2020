@@ -3,13 +3,14 @@
 footer {
   z-index: 90;
   margin-top: -0.7em;
+  margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
 footer p {
-  margin-bottom: 0.5em;
+  /* margin-bottom: 0.5em; */
   color: var(--secondary-clr);
   font-size: 0.65rem;
   font-weight: 700;
