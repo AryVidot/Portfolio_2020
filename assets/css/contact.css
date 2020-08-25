@@ -109,7 +109,7 @@ textarea {
   letter-spacing: 0.3em;
   border: var(--secondary-clr) solid;
   border-width: 0.2em;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   width: 50vw;
 }
 

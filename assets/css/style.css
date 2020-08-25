@@ -92,17 +92,6 @@ h3 {
   z-index: 1;
 }
 
-/* hr{
-  border: none;
-  border-top: 2px solid ;
-  border-radius: 5px;
-  color: var(--secondary-clr);
-  overflow: visible;
-  text-align: center;
-  justify-items: center;
-  width: 10vw;
-} */
-
 /* ===== HERO ===== */
 
 .hero {
@@ -159,8 +148,8 @@ h3 {
 .hero__logo,
 .hero__description {
   width: 100%;
-  margin: 0 auto;
-  text-align: left;
+  /* margin: 0 auto; */
+  /* text-align: left; */
   font-size: 12vw;
 }
 
@@ -181,7 +170,7 @@ h3 {
   letter-spacing: 0.3em;
   border: var(--secondary-clr) solid;
   border-width: 0.2em;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   width: 50vw;
 }
 
