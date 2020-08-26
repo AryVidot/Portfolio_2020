@@ -3,7 +3,7 @@
   --secondary-clr: rgb(45, 253, 185);
   --tertiary-clr: rgb(255, 20, 86);
  */
-@import url("/build/assets/css/style.css");
+@import url("/style.css");
 
 section .form {
   width: 100%;

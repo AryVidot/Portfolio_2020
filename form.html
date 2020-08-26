@@ -16,7 +16,6 @@
     <!-- <link rel="stylesheet" href="assets/css/contact.css" /> -->
     <link rel="stylesheet" href="assets/css/form.css" />
 
-    <!-- Video by thiago japyassu on pexels.com - https://www.pexels.com/@japyassu -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const yrSpan = document.querySelector(".year");
@@ -44,7 +43,7 @@
     <main>
       <section class="ctnr">
         <div class="intro">
-          <h2 class="intro__title">CONTACT</h2>
+          <h2 class="intro__title">CONTACT ME</h2>
           <p>Don't be shy and say hello!</p>
           <p>We can meet for a coffee and see how we can work together.</p>
           <p style="display: none;">
@@ -52,36 +51,42 @@
             your details over.
           </p>
         </div>
-        <form
-          action="mailto:aryvidot.dev@gmail.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <div class="name">
-            <input type="text" name="name" required />
-            <label for="name" class="form__label">Name</label>
-          </div>
-          <div class="email">
-            <input type="email" name="email" autocomplete="off" required />
-            <label for="email" class="form__label">Email</label>
-          </div>
-          <div class="subject">
-            <input type="text" name="subject" required />
-            <label for="subject" class="form__label">Subject</label>
-          </div>
-          <div class="message">
-            <textarea
-              name="message"
-              id=""
-              cols="30"
-              rows="10"
-              required
-            ></textarea>
-            <label for="message">Message</label>
-          </div>
-          <input type="submit" name="submit" value="submit" />
-        </form>
+        <section class="form">
+          <form
+            action="mailto:aryvidot.dev@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="name">
+              <input type="text" name="name" required />
+              <label for="name" class="form__label">Name</label>
+            </div>
+            <div class="email">
+              <input type="email" name="email" autocomplete="off" required />
+              <label for="email" class="form__label">Email</label>
+            </div>
+            <div class="subject">
+              <input type="text" name="subject" required />
+              <label for="subject" class="form__label">Subject</label>
+            </div>
+            <div class="message">
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+              <label for="message" class="form__message">Message</label>
+            </div>
+            <div class="form-btn">
+              <input type="submit" name="submit" value="submit" />
+            </div>
+          </form>
+        </section>
       </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
