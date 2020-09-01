@@ -1,13 +1,7 @@
 @import url("/style.css");
-/* https://www.youtube.com/watch?v=BKhoo6RSEDU */
 
-/* form {
-  width: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+/* === FORM === */
+
 .form {
   display: flex;
   flex-direction: column;
@@ -23,17 +17,17 @@
   width: 100%;
   height: 100%;
   font-size: var(--fs-b);
-  padding-top: 1.875em;
-  padding-bottom: 0.25em;
+  padding: 0.625em;
+  margin-bottom: 1.875em;
   border: none;
   background-color: transparent;
   outline: none;
 }
 
 .form textarea {
-  height: 80px;
-  padding: 10px 0;
-  margin-bottom: 20px;
+  height: 5em;
+  padding: 0.625em 0;
+  margin-bottom: 2.5em;
 }
 
 .form input,
@@ -44,64 +38,71 @@
   outline: none;
   border: none;
   background-color: transparent;
-  border-bottom: 2px solid rgb(255, 20, 86);
+  /* border-bottom: 2px solid rgb(255, 20, 86); */
+  border-bottom: 0.0625em solid #000;
+}
+
+.form textarea {
+  margin-bottom: 2.5em;
 }
 
 .form-btn input[type="submit"] {
   border-bottom: none;
   cursor: pointer;
   background: rgb(255, 20, 86);
-  color: #fff;
+  color: #e9f1f7;
+  margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  padding: 15px 0;
+  padding: 0.9375em 0;
 }
 
-.form form div {
+.name,
+.email,
+.subject,
+.message {
   position: relative;
 }
 
-.form label {
+.form__label {
   position: absolute;
-  bottom: 0px;
-  left: 0%;
-  /* top: 10%; */
+  bottom: 0;
+  left: 0;
+  top: 0.625em;
   width: 100%;
   height: 100%;
   pointer-events: none;
   color: rgb(255, 20, 86);
-  border-bottom: 2px solid yellow;
+  transition: 0.5s;
+  pointer-events: none;
+  /* border-bottom: 2px solid yellow; */
 }
 
-.form__name,
-.form__email,
-.form__message {
-  position: absolute;
-  bottom: 5px;
-  left: 0px;
-  transition: all 0.3s ease;
-}
-.form input:focus + .form__label .form__name,
-.form input:valid + .form__label .form__name {
-  transform: translateY(-150%);
-  color: var(--secondary-clr);
+.form input:focus ~ label,
+.form textarea:focus ~ label,
+.form input:valid ~ label,
+.form textarea:valid ~ label {
+  top: -0.75em;
+  left: 0;
+  font-size: 0.75em;
+  font-weight: 500;
+  font-style: italic;
 }
 
-/* .form label::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: -1px;
-  height: 100%;
-  width: 100%;
-  border-bottom: 3px solid;
-  border-color: var(--secondary-clr);
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-} */
+.form input:focus,
+.form textarea:focus,
+.form input:valid,
+.form textarea:valid {
+  border-bottom: 0.0625em solid rgb(255, 20, 86);
+}
 
-/* .form form div label {
-  position: absolute;
-  top: 5px;
-} */
+/* === ICONS === */
+a .fa {
+  color: --var(--tertiary-clr);
+  font-size: 2.5em;
+  /* text-shadow: 2px 2px 4px #000000; */
+}
+.fa:hover {
+  color: --var(--tertiary-clr);
+}

@@ -117,11 +117,11 @@
 }
 .nav__logo {
   color: var(--tertiary-clr);
-  font-size: 7vw;
+  font-size: 10vw;
   display: flex;
   text-align: left;
   justify-content: center;
-  margin-bottom: 2em;
+  margin-bottom: 1.2em;
 }
 .nav__list {
   z-index: 3;
@@ -141,8 +141,12 @@
   text-decoration: none;
 }
 .nav__item li {
-  z-index: 3;
+  /* z-index: 3; */
   margin: 1em;
+}
+.nav__item a {
+  color: rgb(45, 253, 185);
+  font-size: 5vw;
 }
 
 .nav__item::after {
@@ -179,7 +183,6 @@
     font-size: 2em;
   }
   .menu.active {
-    width: -webkit-calc(100% - 0.5rem);
     width: calc(100% - 0.5rem);
   }
 }
