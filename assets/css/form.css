@@ -1,12 +1,22 @@
 @import url("/style.css");
 /* https://www.youtube.com/watch?v=BKhoo6RSEDU */
 
-section .form {
-  width: 100%;
+/* form {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+.form {
   display: flex;
-  position: relative;
   flex-direction: column;
-  overflow: hidden;
+  width: 100%;
+}
+
+.intro_title {
+  display: flex;
+  flex-direction: row;
 }
 
 .form input {
