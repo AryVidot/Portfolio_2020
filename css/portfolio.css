@@ -1,0 +1,18 @@
+@import url("/style.css");
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . ." ". . .";
+}
+
+/*  === Media Query === */
+
+@media all and (-ms-high-contrast: none) {
+  .lt-grid-container {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+  }
+}

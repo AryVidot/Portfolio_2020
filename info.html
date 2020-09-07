@@ -10,12 +10,14 @@
       href="assets/img/My-Avatar.png"
       sizes="196x196"
     />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/menu.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="stylesheet" href="assets/css/info.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/info.css" />
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -44,43 +46,55 @@
 
     <main>
       <section class="ctnr">
-        <div class="intro">
-          <section class="intro__content">
-            <h1 class="info__title">INFO</h1>
-            <img src="assets/img/Smile-MD.jpg" alt="Ary portrait"></img>
-            <p class="info__text">I am <span>Ary</span>.</p>
-            <p class="info__text">
-              I write code, think about new projects and passionate about
-              compelling and simple design. I am also a husband & father who
-              loves cooking too.
-            </p>
-            <p class="info__text">
-              Right now, I'm looking for a full-time position while perfecting
-              my skills.
-            </p>
-          </section>
+        <h2 class="intro__title">INFO</h2>
+
+        <div class="info">
+            <section class="intro">
+              <div class="intro__content">
+                  <img class="img" src="assets/img/jacket-no-glasses.jpg" width=600px alt="Ary photo"></img>
+                  <p class="info__text">Hi, my name is Ary.</p><br>
+                  <p class="info__text">
+                    I write code, think about new projects and passionate about
+                    compelling and simple design. I am also a husband & father who
+                    loves cooking too.</p><br>
+                  <p class="info__text">
+                    Right now, I'm looking for a full-time position while perfecting
+                    my skills.
+                  </p><br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore provident, ea porro sint quos ipsa. Tempore excepturi blanditiis iusto molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sequi dicta harum, obcaecati mollitia aspernatur quaerat provident dolore asperiores facere.</p>
+                </div>
+
+                </section>
+                
+            <div class="info__content">
+              <section class="info-1">
+                    <h3 class="info__title">Skills</h3>
+                  <div class="language__list">
+                    <div class="language__list-htmlCss">
+                      <i class="fab fa-html5" aria-hidden="true"></i>
+                      <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                      <i class="fab fa-bootstrap" aria-hidden="true"></i>
+                      <i class="fab fa-sass" aria-hidden="true"></i>
+                    </div>
+                    <div class="language__list-js">
+                      <i class="fab fa-js" aria-hidden="true"></i>
+                      <i class="fab fa-react" aria-hidden="true"></i>
+                      <i class="fab fa-node-js" aria-hidden="true"></i>
+                    </div>
+                  </div>
+              </section>
+
+              <section class="info-2">
+                    <h3 class="info__title">Career Statement</h3>
+                    <p>I’m  seeking a career where I can be  at my most creative; a way to express myself, not only a “<em>job</em>”.</p><br>
+                    <p>My biggest strength is quickly understanding my client’s vision and finding the best tools available to make it a reality.</p><br>
+                    <p>Secondly, my personable nature and energy through which I foster close working relationships with my colleagues and clients.</p>
+              </section>
+              <section class="download">
+                <a class="download__cv" href="assets/doc/Ary_Vidot_CV_2020.pdf" target="_blank">DOWNLOAD CV</a>
+              </section>
+            </div>
         </div>
-
-        <section class="language">
-          <div class="language__content">
-            <h2 class="language__title">
-            Skills
-            </h2>
-          </div>
-          <div class="language__list">
-            <i class="fab fa-html5" aria-hidden="true"></i>
-            <i class="fab fa-css3-alt" aria-hidden="true"></i>
-            <i class="fab fa-node-js" aria-hidden="true"></i>
-            <i class="fab fa-js" aria-hidden="true"></i>
-            <i class="fab fa-react fa-pulse fa-spin fa-3x" aria-hidden="true"></i>
-            <i class="fab fa-bootstrap" aria-hidden="true"></i>
-            <i class="fab fa-sass" aria-hidden="true"></i>
-          </div>
-        </section>
-
-        <section class="download">
-          <a class="download__cv" href="cv.html" target="_blank">DOWNLOAD CV</a>
-        </section>
       </section>
     </main>
 
@@ -88,7 +102,7 @@
       <div class="copyright">
         <p>
           <span class="year">2020</span> -
-          <a href="index.html" target="_blank">Ary Vidot</a
+          <a href="index.html" target="_blank">Ary Vidot </a
           ><span class="dot">.</span> All rights reserved
         </p>
       </div>

@@ -1,0 +1,96 @@
+@import url("/style.css");
+
+/* === TYPOGRAPHY === */
+.info__title {
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+/* === LAYOUT === */
+
+.info {
+  display: flex;
+  /* flex-grow: column wrap; */
+  max-width: 100%;
+  margin: 0 4em;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.intro {
+  width: 45%;
+  max-height: 100%;
+  margin-left: 0;
+}
+
+.intro__title {
+  margin: 0 4rem;
+  align-items: flex-start;
+}
+
+.intro__content img {
+  max-width: 100%;
+  margin-bottom: 1em;
+  border: 0.625em solid #e9f1f7;
+}
+
+.info__content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Skills Section === */
+
+.language__list {
+  width: 100%;
+  display: flex;
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
+
+/* === ICONS === */
+
+.language__list,
+.language__list-htmlCss,
+.language__list-js {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.language__list i {
+  padding: 0.5em;
+  font-size: 3rem;
+  justify-content: space-evenly;
+  color: rgb(45, 253, 185);
+  text-shadow: 1px 1px #e9f1f7;
+}
+
+/* === Download btn === */
+
+.download__cv {
+  color: #e9f1f7;
+  display: flex;
+  width: 100%;
+  background-color: rgb(255, 20, 86);
+  padding: 1em;
+  border: 1px solid rgb(255, 20, 86);
+  margin: 1em auto;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-weight: var(--fw-l);
+  letter-spacing: 0.0625em;
+}
+
+/* === Media Query === */
+
+/* @media (max-width: 1080px) {
+  .intro__content {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+} */

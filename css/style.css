@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap");
+
+/* VARIABLES */
+:root {
+  --ff-primary: "Montserrat";
+
+  --primary-clr: #e9f1f7;
+  --secondary-clr: rgb(45, 253, 185);
+  --tertiary-clr: rgb(255, 20, 86);
+
+  /* font-weight p */
+  --fw-st: 400;
+  --fw-m: 500;
+  --fw-l: 900;
+
+  /* font-size */
+  --fs-b: 1rem;
+  --fs-h1: 12vw;
+  --fs-h2: 7.786vw;
+  --fs-h3: 3.893vw;
+
+  --bp: 1em solid;
+  --b-clr: var(--primary-clr);
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  background-color: var(--primary-clr);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  font-size: var(--fs-b);
+  font-weight: var(--fw-m);
+  line-height: 1.15;
+  min-height: 100%;
+  height: 100vh;
+  min-width: 360px;
+  overflow-x: hidden;
+}
+
+/* ==== TYPOGRAPHY ==== */
+
+a {
+  text-decoration: none;
+}
+ul {
+  z-index: 1;
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0 2em;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--primary-clr);
+  font-weight: var(--fw-l);
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  color: var(--primary-clr);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-l);
+}
+
+h3 {
+  color: var(--primary-clr);
+  font-size: var(--fs-h3);
+  /* margin: 0 1em; */
+}
+
+p {
+  font-size: --var(--fs-b);
+  /* line-height: 1.5; */
+}
+
+/* ===== LAYOUT =====*/
+
+/* Global layout */
+
+.ctnr {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to right,
+    rgba(250, 112, 154, 0.5),
+    rgba(254, 225, 64, 0.5)
+  );
+  border: 1em solid #e9f1f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* ===== PAGES INTRO ===== */
+
+.intro {
+  box-sizing: border-box;
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 4em;
+}
+
+.intro__title {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  line-height: 1.5;
+}
