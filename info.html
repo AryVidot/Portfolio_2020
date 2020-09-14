@@ -26,6 +26,7 @@
         yrSpan.textContent = currentYear;
       });
     </script>
+
   </head>
 
   <body>
@@ -49,9 +50,10 @@
         <h2 class="intro__title">INFO</h2>
 
         <div class="info">
-            <section class="intro">
-              <div class="intro__content">
-                  <img class="img" src="assets/img/jacket-no-glasses.jpg" width=600px alt="Ary photo"></img>
+          <section class="intro">
+            <div class="intro__content">
+                <img class="img" src="assets/img/jacket-no-glasses.jpg" width=600px alt="Ary photo"></img>
+                <div>
                   <p class="info__text">Hi, my name is Ary.</p><br>
                   <p class="info__text">
                     I write code, think about new projects and passionate about
@@ -63,37 +65,38 @@
                   </p><br>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore provident, ea porro sint quos ipsa. Tempore excepturi blanditiis iusto molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sequi dicta harum, obcaecati mollitia aspernatur quaerat provident dolore asperiores facere.</p>
                 </div>
-
-                </section>
-                
-            <div class="info__content">
-              <section class="info-1">
-                    <h3 class="info__title">Skills</h3>
-                  <div class="language__list">
-                    <div class="language__list-htmlCss">
-                      <i class="fab fa-html5" aria-hidden="true"></i>
-                      <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                      <i class="fab fa-bootstrap" aria-hidden="true"></i>
-                      <i class="fab fa-sass" aria-hidden="true"></i>
-                    </div>
-                    <div class="language__list-js">
-                      <i class="fab fa-js" aria-hidden="true"></i>
-                      <i class="fab fa-react" aria-hidden="true"></i>
-                      <i class="fab fa-node-js" aria-hidden="true"></i>
-                    </div>
-                  </div>
-              </section>
-
-              <section class="info-2">
-                    <h3 class="info__title">Career Statement</h3>
-                    <p>I’m  seeking a career where I can be  at my most creative; a way to express myself, not only a “<em>job</em>”.</p><br>
-                    <p>My biggest strength is quickly understanding my client’s vision and finding the best tools available to make it a reality.</p><br>
-                    <p>Secondly, my personable nature and energy through which I foster close working relationships with my colleagues and clients.</p>
-              </section>
-              <section class="download">
-                <a class="download__cv" href="assets/doc/Ary_Vidot_CV_2020.pdf" target="_blank">DOWNLOAD CV</a>
-              </section>
             </div>
+          </section>
+                
+          <div class="info__content">
+            <section class="info-1">
+                  <h3 class="info__title">Skills</h3>
+                <div class="language__list">
+                  <div class="language__list-htmlCss">
+                    <i class="fab fa-html5" aria-hidden="true"></i>
+                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                    <i class="fab fa-bootstrap" aria-hidden="true"></i>
+                    <i class="fab fa-sass" aria-hidden="true"></i>
+                  </div>
+                  <div class="language__list-js">
+                    <i class="fab fa-js" aria-hidden="true"></i>
+                    <i class="fab fa-react" aria-hidden="true"></i>
+                    <i class="fab fa-node-js" aria-hidden="true"></i>
+                  </div>
+                </div>
+            </section>
+
+            <section class="info-2">
+                  <h3 class="info__title">Career Statement</h3>
+                  <p>I’m  seeking a career where I can be  at my most creative; a way to express myself, not only a “<em>job</em>”.</p><br>
+                  <p>My biggest strength is quickly understanding my client’s vision and finding the best tools available to make it a reality.</p><br>
+                  <p>Secondly, my personable nature and energy through which I foster close working relationships with my colleagues and clients.</p>
+            </section>
+            
+            <section class="download">
+              <a class="download__cv" href="assets/doc/Ary_Vidot_CV_2020.pdf" target="_blank">DOWNLOAD CV</a>
+            </section>
+          </div>
         </div>
       </section>
     </main>
@@ -108,7 +111,13 @@
       </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+    <script src="/js/menu.js"></script>
   </body>
 </html>

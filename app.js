@@ -1,19 +1,19 @@
-// import React from "react";
+// //  Listen for form submit
 
-// MENU BUTTON
-$(".menu-opener").click(function () {
-  $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
-});
+// document.getElementById("submit").addEventListener("submit", submitForm);
 
-// JavaScript
-// window.sr = ScrollReveal();
+// function submitForm(e) {
+//   e.preventDefault();
+//   console.log(123);
 
-// sr.reveal('h1', {
-//     delay: 0,
-//     duration: 200,
-//     origin: 'bottom',
-//     distance: '100px'
-// });
+//   // get values
+//   const name = getInputVal("name");
+//   const email = getInputVal("email");
+//   const subject = getInputVal("subject");
+//   const message = getInputVal("message");
+// }
 
-// const express = require("express");
-// const app = express;
+// // function to get form values
+// function getInputVal(id) {
+//   return document.getElementById(id).nodeValue;
+// }
