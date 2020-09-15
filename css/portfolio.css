@@ -2,17 +2,18 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: ". . ." ". . .";
+  grid-template-columns: ;
+  height: 300px;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-gap: 20px;
 }
 
 /*  === Media Query === */
 
-@media all and (-ms-high-contrast: none) {
+/* @media all and (-ms-high-contrast: none) {
   .lt-grid-container {
     display: -ms-grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
   }
-}
+} */

@@ -117,7 +117,7 @@
             <!-- @TODO - validation -->
             <form id="contactForm">
               <div class="name">
-                <input id="name" type="text" name="name" />
+                <input id="name" type="text" name="name" required />
                 <label for="name" class="form__label">Name</label>
               </div>
               <div class="email">
@@ -126,15 +126,21 @@
                   type="email"
                   name="email"
                   autocomplete="off"
+                  required
                 />
                 <label for="email" class="form__label">Email</label>
               </div>
               <div class="subject">
-                <input id="subject" type="text" name="subject" />
+                <input id="subject" type="text" name="subject" required />
                 <label for="subject" class="form__label">Subject</label>
               </div>
               <div class="message">
-                <textarea name="message" id="message" rows="5"></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
                 <label id="message" for="message" class="form__label"
                   >Message</label
                 >
