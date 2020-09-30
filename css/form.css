@@ -4,22 +4,16 @@
 
 .contact__title {
   font-size: 2rem;
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 /* === LAYOUT === */
 
-.contact-2 {
-  width: 45%;
-  max-height: 100%;
+.intro__content {
+  width: 90%;
+  margin: auto;
+  margin-top: 0;
 }
-
-.contact-1 {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-}
-
 .contact-1 img {
   max-width: 100%;
   margin-bottom: 1em;
@@ -29,13 +23,9 @@
 /* === FORM === */
 
 .form {
-  display: flex;
-  flex-grow: row wrap;
-  max-width: 100%;
-  margin: 0 4em;
-  box-sizing: border-box;
-  justify-content: space-between;
-  margin-bottom: 1em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .form input {
@@ -67,7 +57,6 @@
   outline: none;
   border: none;
   background-color: transparent;
-  /* border-bottom: 2px solid rgb(255, 20, 86); */
   border-bottom: 0.0625em solid #000;
 }
 
@@ -76,7 +65,7 @@ button {
   cursor: pointer;
   background: rgb(255, 20, 86);
   color: #e9f1f7;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -145,7 +134,7 @@ button:hover {
   justify-items: center;
   align-items: center;
   color: rgb(45, 253, 185);
-  font-size: 3em;
+  font-size: 2em;
   padding: 0 1em;
   margin: 1em auto;
   text-shadow: 1px 1px #e9f1f7;
@@ -158,78 +147,52 @@ button:hover {
 
 /* === MEDIA QUERIES === */
 
-@media (max-width: 370px) {
-  .intro {
-    margin: 0 2em;
+@media (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 1fr;
   }
-  .intro__title {
-    margin-top: 2.5em;
-  }
-  .form {
-    margin: 0 2em;
-  }
-  .form input {
-    font-size: 1rem;
-  }
-
-  .contact-2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact__title {
-    font-size: 1em;
-  }
-  .contact__list {
-    margin-left: -2.5em;
-    /* margin: auto; */
-  }
-  a {
-    font-size: 0.5em;
-    padding: 0 0.2em;
-    justify-items: center;
-    /* width: 100%; */
-    /* margin: 0.5em auto; */
+  .title {
+    margin-top: 1.5em;
   }
 }
 
-@media (max-width: 580px) {
-  .contact__list a {
-    font-size: 1em;
-    padding: 0 1em;
-    margin: 1em auto;
-  }
-  .contact__title {
-    font-size: 1em;
+@media (max-width: 800px) {
+  .title {
+    font-size: 6rem;
+    margin-top: 0.5em;
   }
 }
 
-@media (max-width: 710px) {
-  .ctnr {
-    padding: 0;
-    margin: 0;
-  }
-  .form {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+@media (max-width: 500px) {
   .contact__list a {
     font-size: 1.5em;
     padding: 0 1em;
     margin: 1em auto;
   }
-}
 
-@media (max-width: 1070px) {
-  .intro__title {
-    margin-top: 1em;
+  p {
+    font-size: 1rem;
   }
-  .form {
-    flex-wrap: wrap;
-    flex-direction: column;
+  h2 {
+    font-size: 2.5rem;
   }
-  .contact-1,
-  .contact-2 {
-    width: 100%;
+  h3 {
+    font-size: 2rem;
+  }
+
+  .page__title,
+  .info__title {
+    text-align: center;
+  }
+
+  .language__list,
+  .language__list-htmlCss,
+  .language__list-js {
+    justify-content: center;
+  }
+  .language__list i {
+    padding: 0 0.5em 0.5em 0;
+    font-size: 2.5rem;
+    justify-content: space-evenly;
   }
 }

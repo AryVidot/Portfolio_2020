@@ -2,43 +2,17 @@
 
 /* === TYPOGRAPHY === */
 .info__title {
-  font-size: 2rem;
   margin-bottom: 0.5em;
 }
 
 /* === LAYOUT === */
 
-.info {
-  display: flex;
-  /* flex-grow: column wrap; */
-  max-width: 100%;
-  margin: 0 4em;
-  box-sizing: border-box;
-  justify-content: space-between;
-  margin-bottom: 1em;
-}
-
-.intro {
-  width: 45%;
-  max-height: 100%;
-  margin-left: 0;
-}
-
-.intro__title {
-  margin: 0 3.5rem;
-  align-items: flex-start;
-}
-
 .intro__content img {
   max-width: 100%;
+  margin: auto;
   margin-bottom: 1em;
-  border: 0.625em solid #e9f1f7;
-}
-
-.info__content {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
+  border: 0.625em solid;
+  border-color: var(--primary-clr);
 }
 
 /* === Skills Section === */
@@ -62,7 +36,6 @@
 
 .language__list i {
   padding: 0 0.5em 0.5em 0;
-  /* margin-top: 0; */
   font-size: 3rem;
   justify-content: space-evenly;
   color: rgb(45, 253, 185);
@@ -86,89 +59,48 @@
   letter-spacing: 0.0625em;
 }
 
-/* === Media Query === */
+/* === MEDIA QUERIES === */
 
-@media (max-width: 1070px) {
-  .intro__title {
-    margin-top: 1em;
+@media (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 1fr;
   }
-  .info {
-    max-width: 100%;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 0 3.5em;
-  }
-  .intro {
-    width: 100%;
-  }
-  .intro__content {
-    margin-bottom: 1em;
-  }
-  .info__content {
-    width: 100%;
-  }
-  .info-1,
-  .info-2 {
-    width: 100%;
+  .title {
+    margin-top: 1.5em;
   }
 }
 
-@media (max-width: 710px) {
-  .intro__title {
-    margin-top: 1em;
-  }
-  .info {
-    margin: 0 1.5em;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .language__list i {
-    font-size: 2em;
+@media (max-width: 800px) {
+  .title {
+    font-size: 6rem;
+    margin-top: 0.5em;
   }
 }
 
-@media (max-width: 580px) {
-  .intro__title {
-    margin: 1.5em 0 0.5em 0;
-    align-self: center;
+@media (max-width: 500px) {
+  p {
+    font-size: 1rem;
   }
-  .ctnr {
-    padding: 0;
-    margin: 0;
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
   }
 
-  .language__list {
-    display: flex;
+  .page__title,
+  .info__title {
+    text-align: center;
+  }
+
+  .language__list,
+  .language__list-htmlCss,
+  .language__list-js {
     justify-content: center;
   }
   .language__list i {
-    font-size: 1.5em;
-  }
-  .info__title {
-    font-size: 2em;
-    text-align: center;
-  }
-}
-
-@media (max-width: 370px) {
-  .intro__title {
-    font-size: 2rem;
-    margin: 1.5em 0 0.5em 0;
-  }
-  .info {
-    /* margin: 0 2em; */
-  }
-  .info-2 {
-    display: flex;
-    flex-direction: column;
-  }
-  .info__title {
-    font-size: 1.5em;
-  }
-  .language__list-htmlCss,
-  .language__list-js {
-    font-size: 1em;
-    padding: 0 0.2em;
-    justify-items: center;
+    padding: 0 0.5em 0.5em 0;
+    font-size: 2.5rem;
+    justify-content: space-evenly;
   }
 }
