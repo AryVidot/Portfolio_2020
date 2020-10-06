@@ -1,19 +1,116 @@
 @import url("/style.css");
 
-.grid-container {
+/* Background gradient */
+/* background: linear-gradient(-45deg, #f321d7, #ffec61);
+background: linear-gradient(-45deg, #24ff72, #9a4eff); */
+
+.portfolio__intro {
+  width: 90%;
+  margin: auto;
+}
+
+.portfolio__grid {
+  width: 90%;
+  margin: auto;
+}
+
+.card-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.card {
   display: grid;
-  grid-template-columns: ;
-  height: 300px;
-  /* grid-template-rows: 1fr 1fr; */
-  grid-gap: 20px;
+  position: relative;
+  grid-template-columns: 300px;
+  grid-template-rows: 220px 100px 100px;
+  grid-template-areas: "image" "text" "link";
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+  cursor: pointer;
+  margin: 1.2rem 0;
+  transition: 0.5s ease;
+}
+
+.card .card__image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(-45deg, #f321d7, #ffec61);
+}
+.card:nth-child(3) {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+}
+
+.card__title {
+  font-size: 2rem;
+  color: black;
+}
+.card > p {
+  font-size: 0.9375em;
+  color: var(--primary-clr);
+  margin-top: 1em;
+}
+/* 
+i {
+  display: block;
+  size: 1em;
+  color: var(--secondary-clr);
+  text-shadow: 1px 1px var(--primary-clr);
+} */
+
+/* .card__link {
+  grid-area: link;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+} */
+/* .card__link a {
+  border: 2px solid;
+  border-color: var(--primary-clr);
+  padding: 0.5em 1em;
+  border-radius: 15px;
+  transition: 0.5s ease;
+} */
+.card__link:hover {
+  transform: scale(1.05);
+}
+
+.link::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 /*  === Media Query === */
 
-/* @media all and (-ms-high-contrast: none) {
-  .lt-grid-container {
-    display: -ms-grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
+@media (max-width: 555px) {
+  .card-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
-} */
+  .card {
+    margin: 2rem;
+  }
+}

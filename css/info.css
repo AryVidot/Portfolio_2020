@@ -2,6 +2,8 @@
 
 /* === TYPOGRAPHY === */
 .info__title {
+  font-size: 2.5rem;
+
   margin-bottom: 0.5em;
 }
 
@@ -38,19 +40,20 @@
   padding: 0 0.5em 0.5em 0;
   font-size: 3rem;
   justify-content: space-evenly;
-  color: rgb(45, 253, 185);
-  text-shadow: 1px 1px #e9f1f7;
+  color: var(--secondary-clr);
+  text-shadow: 1px 1px var(--primary-clr);
 }
 
 /* === Download btn === */
 
 .download__cv {
-  color: #e9f1f7;
+  color: var(--primary-clr);
   display: flex;
   width: 100%;
-  background-color: rgb(255, 20, 86);
+  background-color: var(--tertiary-clr);
   padding: 1em;
-  border: 1px solid rgb(255, 20, 86);
+  border: 1px solid;
+  border-color: var(--tertiary-clr);
   margin: 1em auto;
   justify-content: center;
   align-content: center;

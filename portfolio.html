@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
-
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const yrSpan = document.querySelector(".year");
@@ -43,34 +42,54 @@
 
     <main>
       <section class="ctnr">
-        <div class="intro">
-          <section class="intro__content">
-            <h1 class="intro__title">PORTFOLIO</h1>
-            <h2 class="comingSoon">Coming soon...</h2>
-            <p class="intro__text" style="display: none;">
-              I've been working on the following projects.
-            </p>
-            
-          </section>
-          <section style="display: none;">
-            <div class="grid-container">
-              <div class="col-1">
-                <picture><h3>HOLDER1</h3></picture>
-              </div>
-              <div class="col-2">
-                <picture><h3>HOLDER2</h3></picture>
-              </div>
-              <div class="col-3">
-                <picture><h3>HOLDER3</h3></picture>
-              </div>
-              <div class="col-4">
-                <picture><h3>HOLDER4</h3></picture>
-              </div>
+        <div class="title">
+          <h2 class="page__title">PORTFOLIO</h2>
+        </div>
+        <div class="portfolio__intro">
+          <p>See some of my projects below</p>
+          <br>
+        </div>
 
+        <div class="portfolio__grid">
+          <div class="card-wrapper">
+            <div class="card">
+              <img src="assets/img/project-img/mbakes-LG.JPG" alt="baking website thumb" class="card__image">
+              <h2 class="card__title">React Website</h2>
+              <p>Built with React.js</p>
+              <a class="link" href="https://av-mbakes.netlify.app/" target="_blank"></a>
+              <div class="card__link"></div>
             </div>
 
-          </section>
+            <div class="card">
+              <img src="assets/img/project-img/magic8-LG.JPG" alt="magic8 ball game thumb" class="card__image">
+              <h2 class="card__title">JS Game</h2>
+              <p>Built with Vanilla Javascript & jQuery</p>
+              <a class="link" href="https://av-magic8ball.netlify.app/" target="_blank"></a>
+              <div class="card__link"></div>
+            </div>
+
+            <div class="card">
+              <img src="assets/img/project-img/weatherApp-LG.JPG" alt="magic8 ball game thumb" class="card__image">
+              <h2 class="card__title">React Weather App</h2>
+              <p>Built with React.js <br> and<br> access to API</p>
+              <a class="link" href="#" target="_blank"></a>
+              <div class="card__link"></div>
+            </div>
+
+            <div class="card">
+              <img src="assets/img/project-img/pixabay-414630-LG.jpg" alt="magic8 ball game thumb" class="card__image">
+              <h2 class="card__title">Brewing?</h2>
+              <p>Placeholder generator</p>
+              <a class="link" href="#" target="_blank"></a>
+              <div class="card__link"></div>
+            </div>
+
+          </div>
         </div>
+  </div>
+
+
+
       </section>
     <main/>
     <footer>
@@ -87,7 +106,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
     
     <script src="/js/menu.js"></script>
   </body>
