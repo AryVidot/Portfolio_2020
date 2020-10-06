@@ -58,11 +58,12 @@ background: linear-gradient(-45deg, #24ff72, #9a4eff); */
 .card__title {
   font-size: 2rem;
   color: black;
+  margin-top: 0;
 }
 .card > p {
   font-size: 0.9375em;
   color: var(--primary-clr);
-  margin-top: 1em;
+  margin-top: 0.3em;
 }
 /* 
 i {
@@ -102,8 +103,28 @@ i {
 }
 
 /*  === Media Query === */
+@media (max-width: 1000px) {
+  .title {
+    margin-top: 1.5em;
+  }
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-size: 6rem;
+    margin-top: 0.5em;
+  }
+}
 
 @media (max-width: 555px) {
+  .page__title,
+  .info__title {
+    text-align: center;
+  }
+  .portfolio__intro > p {
+    text-align: center;
+  }
+
   .card-wrapper {
     flex-direction: column;
     flex-wrap: wrap;

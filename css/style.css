@@ -97,10 +97,7 @@ p {
   );
   border: 1em solid;
   border-color: var(--primary-clr);
-  /* display: flex;
-  flex-direction: column; */
   min-height: 100vh;
-  /* justify-content: center; */
 }
 
 .wrapper {
@@ -114,23 +111,7 @@ p {
 }
 
 .title {
-  /* box-sizing: border-box; */
-  /* display: grid; */
   max-width: 90%;
-  /* grid-template-columns: 1fr; */
-  /* grid-gap: 1.5em; */
   width: 100%;
   margin: 2.9% auto 0;
 }
-
-/* ==== Coming Soon Note ==== */
-/* .comingSoon {
-  width: 100%;
-  border: rgb(45, 253, 185) solid 5px;
-  margin: 1em auto;
-  padding: 0.5em;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-} */
