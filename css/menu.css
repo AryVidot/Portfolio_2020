@@ -136,13 +136,13 @@
   padding: 0.625em 0;
 }
 
-.nav__item li {
-  /* z-index: 3; */
-  /* margin: 0 193.578px; */
-}
+/* .nav__item li {
+  z-index: 3;
+  margin: 0 193.578px;
+} */
 
 .nav__item a {
-  color: rgb(45, 253, 185);
+  color: rgb(66, 151, 123);
   font-size: 5vw;
 }
 

@@ -65,7 +65,9 @@
   /* added 7/10 */
   /* text-align: center; */
 }
-
+.hero__content h1 {
+  text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.1);
+}
 .hero__description {
   width: 100%;
   font-size: 4vw;
@@ -74,7 +76,6 @@
   margin-bottom: 1.5em;
   /* added 7/10 */
   text-align: center;
-
 }
 
 .hero-btn {
@@ -107,4 +108,3 @@
     max-width: 50%;
     width: 100%;
   } */
-}
