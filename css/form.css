@@ -2,9 +2,17 @@
 
 /* === TYPOGRAPHY === */
 
+.title h2 {
+  text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.1);
+}
 .contact__title {
   font-size: 2rem;
   margin: 0.5em 0;
+}
+
+.contact-1 h3,
+.contact-2 h3 {
+  text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.1);
 }
 
 /* === LAYOUT === */

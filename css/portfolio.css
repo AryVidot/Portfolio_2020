@@ -4,6 +4,9 @@
 /* background: linear-gradient(-45deg, #f321d7, #ffec61);
 background: linear-gradient(-45deg, #24ff72, #9a4eff); */
 
+.title h2 {
+  text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.1);
+}
 .portfolio__intro {
   width: 90%;
   margin: auto;
