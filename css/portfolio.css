@@ -68,26 +68,7 @@ background: linear-gradient(-45deg, #24ff72, #9a4eff); */
   color: var(--primary-clr);
   margin-top: 0.3em;
 }
-/* 
-i {
-  display: block;
-  size: 1em;
-  color: var(--secondary-clr);
-  text-shadow: 1px 1px var(--primary-clr);
-} */
 
-/* .card__link {
-  grid-area: link;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-} */
-/* .card__link a {
-  border: 2px solid;
-  border-color: var(--primary-clr);
-  padding: 0.5em 1em;
-  border-radius: 15px;
-  transition: 0.5s ease;
-} */
 .card__link:hover {
   transform: scale(1.05);
 }
@@ -103,6 +84,31 @@ i {
 .card:hover {
   transform: scale(1.05);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.portfolio-btn {
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+.hero-btn {
+  text-align: center;
+  color: var(--primary-clr);
+  padding: 1em 2em;
+  margin: auto;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  border: var(--secondary-clr) solid;
+  border-width: 0.2em;
+  max-width: 50vw;
+}
+
+.hero-btn:hover {
+  transform: scale(0.95);
+  border: var(--tertiary-clr) solid;
+  border-width: 0.2em;
+  transition: 0.07s ease-in-out;
 }
 
 /*  === Media Query === */
