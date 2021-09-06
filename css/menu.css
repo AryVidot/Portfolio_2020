@@ -37,9 +37,10 @@
   background: var(--secondary-clr);
   height: 0.5rem;
   margin-left: 0.75rem;
-  margin-top: 1.75rem;
+  /* margin-top: 1.75rem; */
+  margin-top: 2rem;
   width: 2.5rem;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .menu-opener-inner::before,
@@ -50,7 +51,7 @@
   display: block;
   height: 0.5rem;
   width: 2.5rem;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .menu-opener-inner::before {
