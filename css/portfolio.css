@@ -20,8 +20,8 @@ background: linear-gradient(-45deg, #24ff72, #9a4eff); */
 .card-wrapper {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
@@ -29,32 +29,38 @@ background: linear-gradient(-45deg, #24ff72, #9a4eff); */
   display: grid;
   position: relative;
   grid-template-columns: 300px;
-  grid-template-rows: 220px 100px 100px;
+  grid-template-rows: 200px 100px 110px;
+  grid-gap: 5%;
   grid-template-areas: "image" "text" "link";
-  /* border-radius: 18px; */
   text-align: center;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   background: linear-gradient(-45deg, #f403d1, #64b5f6);
   cursor: pointer;
   margin: 1.2rem 0;
   transition: 0.5s ease;
+  padding: 1%;
 }
 
 .card .card__image {
   width: 100%;
   height: auto;
-  /* border-top-left-radius: 15px; */
-  /* border-top-right-radius: 15px; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
 }
 
-.card:nth-child(2) {
+.tech span {
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+.card:nth-child(even) {
   background: linear-gradient(-45deg, #f321d7, #ffec61);
 }
-.card:nth-child(3) {
+.card:nth-child(odd) {
   background: linear-gradient(-45deg, #24ff72, #9a4eff);
 }
 
